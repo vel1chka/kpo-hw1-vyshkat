@@ -56,3 +56,11 @@
 Запуск демо-сценария:
 ```bash
 go run .
+
+Запуск юнит-тестов:
+```bash
+go test -v ./...
+
+Проверка покрытия (main не в счёт):
+```bash
+go test -coverprofile=cover.out && go tool cover -func=cover.out
